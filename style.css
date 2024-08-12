@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.sign_button {
+    display: flex;
+    gap: 20px;
+}
+
+.sign_button select {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 6px 36px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.sign_button button {
+    background-color: #ff000d;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.logo img {
+    width: 200px;
+    height: 100px;
+}
+
+.main_img {
+    background-image: url(./img/main.jpg);
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: absolute; */
+    border-bottom: 8px solid #232323;
+}
+
+.background_color {
+    background: #000000;
+    background: radial-gradient(at center, #2e2e2e17, #010101);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_img_contant {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main_img_contant p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main_img_contant h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+.main_img_contant button {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #c11119;
+    color: white;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.tv_sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 8px solid #232323;
+    padding-bottom: 50px;
+}
+
+.container,
+.container2 {
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tv_sec_contant {
+    color: white;
+}
+
+.tv_sec_contant h2 {
+    font-size: 48px;
+}
+
+.tv_sec_contant p {
+    font-size: 24px;
+}
+
+.questions_sec,
+.questions_sec .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions_sec .container {
+    width: 1170px;
+}
+
+.questions_sec {
+    margin: 50px 0px;
+    width: 100%;
+    border-bottom: 8px solid #232323;
+}
+
+
+.questions_div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.questions_div h1 {
+    font-size: 48px;
+}
+
+.main_que {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.main_que div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #232323;
+    width: 100%;
+}
+
+.main_que div h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main_que div span i {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.questions_div button {
+    background-color: #ff000d;
+    padding: 15px 30px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+.container3 {
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.footer_contant {
+    color: #ffffffb3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer_contant a {
+    color: #ffffffb3;
+}
+
+.footer_ul_li ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+}
+
+.footer_ul_li ul li a {
+    color: #ffffffb3;
+    font-size: 14px;
+}
+
+.footer_ul_li ul li {
+    flex: 20%;
+}
+
+.lang_sel select {
+    background-color: rgba(34, 34, 34, 0.5);
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.footer_contant p {
+    font-size: 14px;
+}
+
+@media (max-width:1188px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+
+    .container2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        gap: 50px;
+    }
+}
+
+@media (max-width:946px) {
+    .main_img_contant {
+        text-align: center;
+    }
+}
+
+@media (max-width:640px) {
+    .footer_ul_li ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .footer_ul_li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tv_sec img {
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .tv_sec_img video {
+        top: 20px;
+        left: 42px;
+        width: 37vw;
+        height: 19vh;
+    }
+
+    .tv2 video {
+        top: -2px !important;
+        left: 50px !important;
+        width: 32vw !important;
+        height: 18vh !important;
+    } 
+
+    .footer_ul_li ul li {
+        flex: 40%;
+    }
+
+    .footer_contant {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:494px) {
+
+    .sign_button select,
+    .sign_button button {
+        padding: 0px;
+    }
+}
+
+@media (max-width:336px) {
+    .logo img {
+        width: 30vw;
+        height: 10vh;
+    }
+}
+
+ .tv_sec_img {
+    position: relative;
+}
+
+.tv_sec_img img {
+    position: relative;
+    z-index: 5;
+}
+
+.tv_sec_img video {
+    position: absolute;
+    top: 99px;
+    left: 81px;
+}
+
+
+.tv2 {
+    position: relative;
+}
+
+.tv2 img {
+    position: relative;
+    z-index: 5;
+}
+
+.tv2 video {
+    position: absolute;
+    top: 40px;
+    left: 107px;
+    max-width: 407px;
+}
+
+
+
